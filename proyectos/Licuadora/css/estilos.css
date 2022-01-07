@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blender{
+    position: fixed; /*El elemento es removido del flujo normal del documento, sin crearse espacio alguno para el elemento en el esquema de la página. */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); /*Especifica una tanslación 2D dada por el vector [tx, ty]. Si ty no es específicada, se asumirá que su valor es cero.*/
+    width: 700px;
+    height: 500px;
+    background-image: url("../img/licuadoraApagada.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Cambiar el fondo de la licuadora cuando esta se prenda, ponemos el gif*/
+/*Creamos una clase para cuando la la lcuadora se prenda*/
+.blender.active{
+    background-image: url("../img/licuadoraEncendida.gif");
+}
+
+.blender-button{
+    margin: 370px auto 0;
+    width: 40px;
+    height: 40px;
+    /* background-color: blue; */
+}
